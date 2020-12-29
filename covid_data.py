@@ -89,11 +89,11 @@ view = pdk.ViewState(latitude=0, longitude=0, zoom=0.2,)
 
 # Create the scatter plot layer
 covidLayer = pdk.Layer(
-#        "ScatterplotLayer",
-        "HexagonLayer",
+        "ScatterplotLayer",
+#        "HexagonLayer",
         data=df,
-#        pickable=False,
-        pickable=True,
+        pickable=False,
+#        pickable=True,
         auto_highlight=True,
         elevation_scale=50,
         elevation_range=[0, 3000],
